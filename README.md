@@ -17,10 +17,15 @@ browser_mod is required for this channel panel (you can find it [here](https://g
 custom card: "card-channel-pad" is required (you can find it [here](https://github.com/madmicio/channel-pad))
 
 ## New Features:
-
+**source button now shows glowing bacground base on its state**
 **remote is now resizable - scale added to dimensions option**
 **corderwidth added to dimensions option**
 **border added to colors option**
+
+Glowing source button in default theme
+![all](example/glow_source_default_theme.png.png)
+Glowing source button in ios-dark-mode theme
+![all](example/glow_source_ios_theme.png)
 
 ## Color Management
 color customization implemented through the section
