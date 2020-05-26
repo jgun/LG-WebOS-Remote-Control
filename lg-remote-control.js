@@ -369,7 +369,7 @@ class LgRemoteControl extends LitElement {
                       <div class="grid-container-source">
                       ${this.config.sources.map(source => {
                       return html`
-                        <button class="btn_source ripple" @click=${() => this._select_source(source.name)}>
+                        <button class="${stateObj.attributes.source === source.name ? 'btn_source_on ripple' : 'btn_source ripple'}" @click=${() => this._select_source(source.name)}>
                           ${LgRemoteControl.getIcon(source.icon)}
                         </button>
                       `;
@@ -840,6 +840,18 @@ class LgRemoteControl extends LitElement {
            width: 100%;
            height: 100%;
            border-width: 0px;
+      }
+       .btn_source_on {
+           background-color: var(--remote-button-color);
+           color: var(--remote-text-color);
+           width: calc(var(--remotewidth) / 5);
+           height: calc(var(--remotewidth) / 6.885);
+           border-width: 2px;
+           border-color: var(--primary-color);
+           border-radius: calc(var(--remotewidth) / 10);
+           margin: calc(var(--remotewidth) / 18.57) auto calc(var(--remotewidth) / 20) auto;
+           place-items: center;
+           cursor: pointer;
       }
        .btn_source {
            background-color: var(--remote-button-color);
