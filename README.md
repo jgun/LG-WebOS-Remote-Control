@@ -83,6 +83,7 @@ resources:
 | `channels` |  | **Option**|  | list of channel in popup |
 | `sources` |  | **Option**|  | list of custom app. if not set, default apps will be displayed |
 | `color_buttons` |  | **Option**| enable | display color buttons: RED GREEN YELLOW BLUE |
+| `support_soundbar` |  | **Option**| enable |  option would fix sound output switching for both optical and hdmi in certain TVs|
 
 ### Source Options
 | Name | Type | Default | Supported options | Description |
